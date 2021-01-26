@@ -20,7 +20,7 @@ class Deck:
         self.cards = [Card(value, suit) for value in values for suit in suits]
 
     def __repr__(self):
-        return "Deck of {} cards".format(self.count())
+        return f"Deck of {self.count()} cards"
 
     def count(self):
         # Returns number of remaining cards in deck.
